@@ -261,36 +261,54 @@
   width: 66%;
 }
 
-.cards-top {
-  background-color: red;
+.cards-top {  
   display: flex;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.147);
 }
 
 .cards-top-text {
   font-family: var(--font-main);
   padding: 20px;
-  width: 50%;
+  padding-right: 70px;
 }
 
 .cards-top-title {
   font-family: var(--font-main);
   background-image: var(--color-text-gradient);
+  font-size: 24px;
   color: transparent;
   background-clip: text;
   line-height: 100%;
 }
 
 .card-top-p {
+  font-size: 14px;
+  line-height: 100%;
+  
 }
 
 .card-top-cta {
+  background: var(--color-bg-gradient);
+  color: var(--color-white);
+  padding: 5px 5px;
+  border-radius: 5px;
+  gap: 10px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 65%;
 }
 
 .card-top-icon {
+  width: 10px;
 }
 
 .card-top-text-cta {
+  font-family: var(--font-main);
+  color: var(--color-white);
+  font-size: 14px;
 }
 
 .cards-top-img {
@@ -302,11 +320,16 @@
 
 /* ---- Cards Bottom ---- */
 .cards-bot {
-  background-color: rgb(0, 255, 30);
   display: flex;
   flex-direction: row-reverse;
   border-radius: 10px;
+  background-image: url(assets/mask-gradient-2.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.147);
+  overflow: hidden;
 }
+
 
 .cards-bot-text {
   font-family: var(--font-main);
@@ -325,18 +348,19 @@
 .card-bot-p {
 }
 
-.cards-bot-img {
-}
-
 .cards-bot-img-ai {
   width: 260px;
 }
 
 /* ---- Cards 2 ---- */
 .cards2 {
-  background-color: #62B1FF;
   border-radius: 10px;
   width: 33%;
+  background-image: url(assets/mask-gradient-1.svg);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.147);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .cards2-text {
@@ -357,4 +381,9 @@
 }
 
 .cards2-img-ai {
+  align-items: center;
+  justify-content: center;
 }
+
+
+
