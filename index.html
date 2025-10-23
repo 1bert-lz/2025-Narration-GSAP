@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="style.css" />
   <meta name="description" content="Portfolio créatif — direction artistique, UI/UX et photographie."/>
 </head>
-<body>
 
+<body>
+<div class="container">
 <!-- Barre de navigation -->
 <header class="header">
   <div class="header-logo">
@@ -19,7 +20,7 @@
 <!-- Liens principaux -->
  <nav class="navbar" role="navigation">
   <ul class="catégories">
-        <li class="navbar-item"><a href="#" class="navbar-link">Découvrir</a></li>
+        <li class="navbar-item"><a href="#section2" class="navbar-link">Découvrir</a></li>
         <li class="navbar-item"><a href="#" class="navbar-link">Forfaits</a></li>
         <li class="navbar-item"><a href="#" class="navbar-link">Avis</a></li>
         <li class="navbar-item"><a href="#" class="navbar-link">Faq</a></li>
@@ -38,7 +39,7 @@
 
 <!-- Section 1 -->
  <section class="section1">
-<div class="container">
+<div class="box1">
     <h1 class="title">Crée tes vidéos publicitaires en un clic</h1>
     <p class="text">Avec Shootify, crée des vidéos publicitaires percutantes en quelques minutes grâce à l’intelligence artificielle.</p>
     <div class="cta">
@@ -56,11 +57,66 @@
   </ul>
   <p class="confiance">100k+ de clients satisfaits </p>
     </div>
-</div>
+    <div class="partner-ship">
+      <ul class="partner">
+    <li class="ai-partner"><img class="ai-partner-img" src="assets/open_ai.svg" alt=""></li>
+    <li class="ai-partner"><img class="ai-partner-img" src="assets/anthropic.svg" alt=""></li>
+    <li class="ai-partner"><img class="ai-partner-img" src="assets/gemini.svg" alt=""></li>
+    <li class="ai-partner"><img class="ai-partner-img" src="assets/n8n.svg" alt=""></li>
+  </ul>
 </section>
 
 <!-- Section 2 -->
- <section class="section2"></section>
+ <section id="section2">
+  <div class="box_video">
+    <video class="video " autoplay muted loop playsinline  controls width="960">
+      <source src="assets/video_promotionel.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+  </div>
+ </div>
+</section>
+
+<!-- Section 3 -->
+ <section class="section3">
+  <div class="bento-cards">
+    <h1 class="bento-cards-title">La manière la plus rapide pour crée des publicité grâce à l’IA</h1>
+    <div class="bento">
+      <div class="cards1">
+        <div class="cards-top">
+          <div class="cards-top-text">
+            <h1 class="cards-top-title">Build multi-step agents calling custom tools</h1>
+            <p class="card-top-p">Create agentic systems on a single screen. Integrate any LLM into your workflows as fast as you can drag-n-drop.</p>
+            <div class="card-top-cta">
+              <img class="card-top-icon" src="assets/flash.svg" alt="">
+              <a href="#" class="card-top-text-cta">7 jours gratuit</a>
+            </div>
+          </div>
+          <div class="cards-top-img">
+            <img class="cards-top-img-ai" src="assets/ai-illustration.svg" alt="ai-illustration">
+          </div>
+        </div>
+        <div class="cards-bot">
+          <div class="cards-bot-text">
+            <h1 class="cards-bot-title">Build multi-step agents calling custom tools</h1>
+            <p class="card-bot-p">Create agentic systems on a single screen. Integrate any LLM into your workflows as fast as you can drag-n-drop.</p>
+          </div>
+          <div class="cards-bot-img">
+            <img class="cards-bot-img-ai" src="assets/ai-illustration.svg" alt="ai-illustration">
+          </div>
+        </div>
+      </div>
+      <div class="cards2">
+          <div class="cards2-text">
+            <h1 class="cards2-title">Build multi-step agents calling custom tools</h1>
+            <p class="cards2-p">Create agentic systems on a single screen. Integrate any LLM into your workflows as fast as you can drag-n-drop.</p>
+          </div>
+            <img class="cards2-img-ai" src="assets/ai-illustration.svg" alt="ai-illustration">
+      </div>
+    </div>
+
+  </div>
+ </section>
 
 <!-- GSAP Core + Plugins (chemins locaux comme demandés) -->
   <script src="js/GSAP/gsap.min.js"></script>
