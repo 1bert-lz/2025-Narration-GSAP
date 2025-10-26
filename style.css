@@ -24,6 +24,10 @@
 
 }
 
+/* =========================
+   Header
+   ========================= */
+
 .header {
   background: var(--color-bg-gradient);
   display: flex;
@@ -86,6 +90,9 @@
   
 }
 
+/* =========================
+   SECTION 1 — Landing page
+   ========================= */
 
 .section1 {
   min-height: 100vh;
@@ -196,6 +203,10 @@
   width: 80%;
 }
 
+/* =========================
+   SECTION 2 — Vidéo
+   ========================= */
+
 #section2 {
   min-height: 100vh;
 
@@ -209,20 +220,31 @@
 }
 
 .video {
-  width: 75%;             
-  aspect-ratio: 16 / 9;     
-  height: auto;             
-  display: block;           
-  border-radius: 20px;
-  pointer-events: none; /* empêche tout clic sur la vidéo */
+  object-fit: cover;
+  border: 4px solid transparent;
+  border-radius: 24px;
+  background: linear-gradient(#000, #000) padding-box, var(--color-bg-gradient) border-box;    
+  background-clip: padding-box, border-box; /* dégradé sur la bordure , source : https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip  & https://css-tricks.com/gradient-borders-in-css/ */ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  border-radius: 20px; 
+  pointer-events: none; 
   box-shadow:
     18px 6px 40px 10px rgba(98, 177, 255, 0.25),
     -18px 0px 40px 10px rgba(236, 103, 29, 0.40),
     0px 18px 45px 10px rgba(186, 107, 236, 0.25),
     0px -18px 40px 10px rgba(196, 113, 245, 0.20);
 }
+  
 
-/* ---- Section 3 ---- */
+/* =========================
+   SECTION 3 — Bento cards
+   ========================= */
 .section3 {
   min-height: 100vh;
   display: flex;
@@ -395,5 +417,316 @@
   justify-content: center;
 }
 
+/* =========================
+   SECTION 4 — AVIS
+   ========================= */
 
+#section4 {
+  min-height: 100vh;
+  display: flex;
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.avis {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  
+}
+
+/* Ombres */
+.shadow-left {
+  
+}
+
+.shadow-right {
+  
+}
+
+/* Texte principal */
+.avis-text {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.avis-title {
+  font-family: var(--font-main);
+  background-image: var(--color-text-gradient);
+  color: transparent;
+  background-clip: text;
+  font-size: 48px;
+  max-width: 550px;
+  line-height: 100%;
+  text-align: center;
+  padding: 20px;
+
+  
+}
+
+.avis-p {
+  font-family: var(--font-main);
+  color: var(--color-text-dark-light);
+  font-size: 20px;
+  line-height: 120%;
+  max-width: 500px;
+  text-align: center;
+  
+}
+
+/* Cartes d'avis */
+.avis-card {
+  display: flex;
+  margin-top: 50px;
+  gap: 40px;
+
+  
+}
+
+/* Trois cartes */
+.avis-card-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 2px solid transparent; 
+  border-radius: 16px; 
+  padding: 32px;
+  text-align: center;
+  background:linear-gradient(#ffffff, #ffffff) padding-box, var(--color-bg-gradient) border-box; 
+  background-clip: padding-box, border-box;/* dégradé sur la bordure , source : https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip  & https://css-tricks.com/gradient-borders-in-css/ */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+  
+}
+
+.avis-card-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 2px solid transparent; 
+  border-radius: 16px; 
+  padding: 32px;
+  text-align: center;
+  background:linear-gradient(#ffffff, #ffffff) padding-box, var(--color-bg-gradient) border-box; 
+  background-clip: padding-box, border-box;/* dégradé sur la bordure , source : https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip  & https://css-tricks.com/gradient-borders-in-css/ */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+ 
+  
+  
+}
+
+.avis-card-tree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 2px solid transparent; 
+  border-radius: 16px; 
+  padding: 32px;
+  text-align: center;
+  background:linear-gradient(#ffffff, #ffffff) padding-box, var(--color-bg-gradient) border-box; 
+  background-clip: padding-box, border-box;/* dégradé sur la bordure , source : https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip  & https://css-tricks.com/gradient-borders-in-css/ */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  
+  
+}
+
+/* Éléments internes */
+.avis-card-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  font-family: var(--font-main);
+  padding: 10px;
+  
+ 
+  
+  
+}
+
+.avis-card-img {
+  border-radius: 100%;
+  width: 10%;
+  
+}
+
+.avis-card-name {
+  background-image: var(--color-text-gradient);
+  font-size: 24px;
+  color: transparent;
+  background-clip: text;
+  line-height: 100%;
+  
+}
+
+.avis-card-comment {
+  font-size: 14px;
+  line-height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+/* =========================
+   SECTION 5 — Pricing
+   ========================= */
+
+#section5 {
+  min-height: 100vh;
+  display: flex;
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+}
+
+.princing {
+  display: flex;
+  width: 70%;
+}
+
+.pricing-title {
+}
+
+/* ====== STRUCTURE DES CARTES ====== */
+
+.princing-card {
+  display: flex;
+  background: var(--color-bg-gradient);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow:
+    18px 6px 40px 10px rgba(98, 177, 255, 0.25),
+    -18px 0px 40px 10px rgba(236, 103, 29, 0.40),
+    0px 18px 45px 10px rgba(186, 107, 236, 0.25),
+    0px -18px 40px 10px rgba(196, 113, 245, 0.20);
+}
+
+/* --- Carte Solo --- */
+.princing-card-solo {
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.princing-card-solo-title {
+}
+
+.princing-card-solo-explain {
+}
+
+.price-title-solo {
+}
+
+.price-explain-solo {
+}
+
+/* Liste des avantages */
+.pricing-available-list {
+}
+
+.pricing-available-list-content {
+}
+
+.list-icon {
+}
+
+.list-text {
+}
+
+/* CTA Solo */
+.list-price-cta-solo {
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.list-price-cta-solo-text {
+  color: var(--color-text-dark);
+}
+
+/* --- Cartes Duo --- */
+.princing-card-duo {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.princing-card-duo-1 {
+   padding: 20px;
+}
+
+.princing-card-duo-2 {
+   padding: 20px;
+}
+
+.princing-card-duo-title {
+
+}
+
+.princing-card-duo-explain {
+
+}
+
+.price-title-duo {
+}
+
+.price-explain-duo {
+}
+
+/* Liste des avantages (duo) */
+.pricing-available-list {
+}
+
+.pricing-available-list-content {
+}
+
+.list-icon {
+}
+
+.list-text {
+  font-size: 10px;
+  opacity: 70%;
+}
+
+/* CTA Duo */
+.list-price-cta-duo {
+  display: flex;
+  background-color: #ffffff;
+  border-color: var(--color-text-dark);
+  border: 1px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.list-price-cta-duo-text {
+}
+
+.list-price-cta-duo-icon {
+}
+
+/* =========================
+   Footer 
+   ========================= */
 
