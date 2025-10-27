@@ -37,7 +37,7 @@
   width: 100%;
   height: 80px;
   padding: 60px;
-  z-index: 40;
+  z-index: 1000;
 
 }
 
@@ -298,6 +298,9 @@
   font-family: var(--font-main);
   padding: 20px;
   padding-right: 70px;
+  display: flex;                     
+  flex-direction: column;            
+  gap: 12px;                         
 }
 
 .cards-top-title {
@@ -361,6 +364,9 @@
 .cards-bot-text {
   font-family: var(--font-main);
   padding: 20px;
+  display: flex;                     
+  flex-direction: column;            
+  gap: 12px;
   
 }
 
@@ -397,6 +403,9 @@
   font-family: var(--font-main);
   padding: 20px;
   gap: 70px;
+  display: flex;                     
+  flex-direction: column;            
+  gap: 12px;   
 }
 
 .cards2-title {
@@ -418,8 +427,8 @@
   width: 100%;
   width: 100%;
   height: 110%;
-  object-fit: cover; /* recadre sans déformer */
-  object-position: center; /* centre l’image */
+  object-fit: cover; 
+  object-position: center; 
 }
   
 
@@ -431,6 +440,7 @@
 #section4 {
   min-height: auto;
   padding: 100px 0;
+  z-index: 4;
 
   display: flex;
   padding: 80px;
