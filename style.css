@@ -94,7 +94,7 @@
    SECTION 1 — Landing page
    ========================= */
 
-.section1 {
+#section1 {
   min-height: 100vh;
   display: flex;
   padding: 80px;
@@ -208,7 +208,8 @@
    ========================= */
 
 #section2 {
-  min-height: 100vh;
+  min-height: auto;
+  padding: 100px 0;
 
 }
 
@@ -245,8 +246,9 @@
 /* =========================
    SECTION 3 — Bento cards
    ========================= */
-.section3 {
-  min-height: 100vh;
+#section3 {
+  min-height: auto;
+  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,11 +386,10 @@
 /* ---- Cards 2 ---- */
 .cards2 {
   border-radius: 10px;
-  width: 33%;
-  background-image: url(assets/mask-grandient-1.svg);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.147);
-  object-fit: cover;
+  background-image: url(assets/mask-gradient-1.svg);
+  background-position: right;  
   background-repeat: no-repeat;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.147);
   overflow: hidden;
 }
 
@@ -413,16 +414,24 @@
 }
 
 .cards2-img-ai {
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  width: 100%;
+  height: 110%;
+  object-fit: cover; /* recadre sans déformer */
+  object-position: center; /* centre l’image */
 }
+  
+
 
 /* =========================
    SECTION 4 — AVIS
    ========================= */
 
 #section4 {
-  min-height: 100vh;
+  min-height: auto;
+  padding: 100px 0;
+
   display: flex;
   padding: 80px;
   align-items: center;
@@ -587,7 +596,7 @@
 #section5 {
   min-height: 100vh;
   display: flex;
-  padding: 80px;
+  padding: 100px;
   align-items: center;
   justify-content: center;
   font-family: var(--font-main);
@@ -615,6 +624,11 @@
     0px -18px 40px 10px rgba(196, 113, 245, 0.20);
 }
 
+.price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 /* --- Carte Solo --- */
 .princing-card-solo {
   padding: 20px;
@@ -623,6 +637,8 @@
 }
 
 .princing-card-solo-title {
+  
+
 }
 
 .princing-card-solo-explain {
@@ -636,9 +652,14 @@
 
 /* Liste des avantages */
 .pricing-available-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing-available-list-content {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
 }
 
 .list-icon {
@@ -655,7 +676,7 @@
   justify-content: center;
   border-radius: 10px;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .list-price-cta-solo-text {
@@ -678,6 +699,7 @@
 }
 
 .princing-card-duo-title {
+  
 
 }
 
@@ -702,7 +724,7 @@
 }
 
 .list-text {
-  font-size: 10px;
+  font-size: 14px;
   opacity: 70%;
 }
 
@@ -717,7 +739,7 @@
   border-radius: 10px;
   border: 1px solid;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .list-price-cta-duo-text {
@@ -729,4 +751,262 @@
 /* =========================
    Footer 
    ========================= */
+  
+.footer {
+  background: var(--color-bg-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 100%;
+}
 
+.footer__logo {
+  width: 190px;
+}
+
+
+
+/* ======================================================
+   RESPONSIVE 
+   ====================================================== */
+@media (max-width: 900px) {
+
+  
+  html, body {
+    overflow-x: hidden; 
+  }
+
+  /* --------- Header --------- */
+  .header {
+    height: 64px;                 
+    padding: 12px 16px;           
+  }
+  .header-logo-img {
+    width: 96px;                  
+  }
+  .navbar,.catégories {
+    display: none;                
+  }
+  .cta-header {
+    padding: 10px 16px;           
+    font-size: 14px;
+  }
+
+  
+  .container {
+    padding: 0 16px;              
+  }
+
+ 
+  #section1 {
+    padding: 100px 16px 24px;     
+    background-size: cover;       
+    min-height: 100svh;           
+  }
+  .box1 {
+    padding-top: 40px;            
+    gap: 16px;
+  }
+  .title {
+    font-size: 46px;              
+    line-height: 110%;
+    max-width: 100%;
+    text-align: center;             
+  }
+  .text {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;  
+  }
+  .cta {
+    width: 100%;                  
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+  .text-cta { 
+    font-size: 16px; 
+  }
+  .litle-text { 
+    font-size: 12px; 
+  }
+
+  .client-satisfaction {
+    gap: 10px;
+    justify-content: flex-start;  
+  }
+  .list-star { 
+    gap: 4px; 
+  }
+  .partner-ship {
+    margin-top: 24px;
+    justify-content: center;
+  }
+  .partner { 
+    gap: 0px; 
+
+   }
+  .ai-partner-img { 
+    width: 82%; } 
+
+  /* --------- SECTION 2 : Vidéo --------- */
+  #section2 {
+    padding: 0px 0;
+  }
+  .box_video { padding: 0 16px; }
+  .video {
+    width: 100%;                  
+    margin: 0;                    
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15); 
+  }
+
+  /* --------- SECTION 3 : Bento cards --------- */
+  #section3 {
+    padding: 48px 0;
+  }
+  .bento-cards { gap: 16px; }
+  .bento-cards-title {
+    font-size: 30px;
+    padding: 0;
+    text-align: center;  
+    max-width: 100%;
+  }
+  .bento {
+    width: 100%;
+    flex-direction: column;      
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  /* Cartes 1 */
+  .cards1 { 
+    width: 100%; gap: 16px; 
+  }
+  .cards-top,.cards-bot,.cards2 {
+    flex-direction: column;       
+  }
+  .cards-top-text,.cards-bot-text,.cards2-text {
+    padding: 16px;
+  }
+  .cards-top-title,.cards-bot-title,.cards2-title {
+    font-size: 20px;
+  }
+  
+  .card-top-p,.card-bot-p,.cards2-p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .card-top-cta {
+    margin-right: 0;
+    width: 100%;                  
+    padding: 10px 12px;
+  }
+  .cards-top-img-ai,.cards-bot-img-ai,.cards2-img-ai {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  /* --------- SECTION 4 : Avis --------- */
+  #section4 {
+    padding: 48px 0;
+  }
+  .avis {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .avis-title {
+    font-size: 28px;
+    padding: 0;
+    text-align: center;  
+    max-width: 100%;
+  }
+  .avis-p {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;  
+    padding-top: 15px;
+  }
+  .avis-card {
+    margin-top: 24px;
+    gap: 16px;
+    flex-direction: column;       
+  }
+  .avis-card-one,
+  .avis-card-two,
+  .avis-card-tree {
+    padding: 20px;
+  }
+  .avis-card-element { 
+    gap: 8px; 
+  }
+
+  .avis-card-img { 
+    width: 64px; 
+  } 
+  .avis-card-name { 
+    font-size: 18px; 
+  }
+  .avis-card-comment {
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 140%;
+  }
+
+  /* --------- SECTION 5 : Pricing --------- */
+  #section5 {
+    min-height: auto;
+    padding: 48px 16px;
+  }
+  .princing {
+    width: 100%;
+    flex-direction: column;       
+    gap: 16px;
+  }
+  .princing-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12); 
+  }
+  .price { font-size: 24px; }
+
+  .princing-card-solo,.princing-card-duo {
+    border-radius: 12px;
+  }
+  .princing-card-duo {
+    flex-direction: column;
+  }
+  .princing-card-duo-1,.princing-card-duo-2 {
+    padding: 16px;
+  }
+
+  .pricing-available-list { 
+    gap: 8px; 
+  }
+  .pricing-available-list-content {
+    gap: 12px;
+    padding-top: 12px;
+  }
+  .list-text { font-size: 14px; }
+
+  /* CTA pricing */
+  .list-price-cta-solo,.list-price-cta-duo {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 16px;
+  }
+  .list-price-cta-solo-text,.list-price-cta-duo-text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* --------- Footer --------- */
+  .footer {
+    height: 140px;
+    padding: 16px;
+  }
+  .footer__logo {
+     width: 140px; 
+    }
+}
