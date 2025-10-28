@@ -42,7 +42,6 @@ tlIntro
 
 
 /* ScrollTrigger */
-
 gsap.to(".cards-top-img-ai", {
   scrollTrigger: {
     trigger: "#section3",          
@@ -50,7 +49,7 @@ gsap.to(".cards-top-img-ai", {
     toggleActions: "play none none reverse"
     // markers: true   
   },
-  duration: 3,
+  duration: 5,
 
   /* Motion Path */
   motionPath: {
