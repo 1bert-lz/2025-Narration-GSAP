@@ -42,7 +42,7 @@ tlIntro
 
 
 /* ScrollTrigger */
-const logo = document.querySelector(".header-logo-img");
+
 gsap.to(".cards-top-img-ai", {
   scrollTrigger: {
     trigger: "#section3",          
